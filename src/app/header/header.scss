@@ -1,0 +1,33 @@
+@import '../../styles/mixins.scss';
+
+header {
+  color: inherit;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  padding: 1.5rem 0;
+  @include box-shadow((0 0 2px rgba(0,0,0,.14),
+                       0 2px 4px rgba(0,0,0,.28)));
+
+
+  .logo {
+    color: inherit;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 900;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    outline: none;
+    padding: 0;
+
+    &,
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

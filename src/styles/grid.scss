@@ -1,0 +1,59 @@
+@import './grid-measures.scss';
+@import './mixins.scss';
+
+.wrapper { margin: 0 auto; }
+
+.line {
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+
+  &,
+  > .fit {
+    display: block;
+  }
+
+  > .fit { float: left; }
+}
+
+@media #{$gm-xs-sm} {
+  .wrapper { width: calc(100% - 2rem); }
+
+  .line {
+    > .fit {
+      &.fit-1 { @include grid-fit(1); }
+      &.fit-2 { @include grid-fit(1); }
+      &.fit-3 { @include grid-fit(1); }
+      &.fit-4 { @include grid-fit(1); }
+      &.fit-5 { @include grid-fit(1); }
+      &.fit-6 { @include grid-fit(1); }
+    }
+  }
+}
+
+@media #{$gm-sm-lg} {
+  .wrapper { width: calc(100% - 7rem); }
+}
+
+@media #{$gm-sm-up} {
+  .line {
+    > .fit {
+      &.fit-1 { @include grid-fit(1); }
+      &.fit-2 { @include grid-fit(2); }
+      &.fit-3 { @include grid-fit(3); }
+      &.fit-4 { @include grid-fit(4); }
+      &.fit-5 { @include grid-fit(5); }
+      &.fit-6 { @include grid-fit(6); }
+    }
+  }
+}
+
+@media #{$gm-lg-xl} {
+  .wrapper { width: calc(100% - 50px); }
+}
+
+@media #{$gm-xl-up} {
+  .wrapper { width: 1000px; }
+}
+

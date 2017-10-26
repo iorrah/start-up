@@ -1,0 +1,33 @@
+@import './styles/grid-measures.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root,
+.app,
+main,
+section {
+  height: 100%;
+  min-height: 40rem;
+}
+
+@media #{$gm-xs-lg} {
+  html,
+  body,
+  #root,
+  .app,
+  main,
+  section {
+    height: auto !important;
+    overflow: auto;
+  }
+}

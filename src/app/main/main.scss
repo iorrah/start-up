@@ -1,0 +1,16 @@
+@import '../../styles/mixins.scss';
+
+main {
+  @include flex-center();
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 100;
+    text-align: center;
+  }
+}

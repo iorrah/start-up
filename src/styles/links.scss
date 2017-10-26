@@ -1,0 +1,12 @@
+@import './colours.scss';
+
+a {
+  font-weight: inherit;
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $guaruja;
+  }
+}
